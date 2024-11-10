@@ -5,7 +5,7 @@
 ###
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&pause=1000&center=true&vCenter=true&width=435&lines=Welcome+to+the+System" alt="Typing SVG" />
+Welcome to the Employee & Admin System
 </h1>
 
 
