@@ -35,3 +35,6 @@ Welcome to the Employee & Admin System
 </div>
 
 ###
+## Feedback
+
+If you have any feedback, please reach out to us at Teanex99@gmail.xom
