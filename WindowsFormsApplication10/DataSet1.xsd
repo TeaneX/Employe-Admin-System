@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Grifindor_System_1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Grifindor_System_1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApplication10.Properties.Settings.GlobalReference.Default.Grifindor_System_1ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LeaveApplications" msprop:Generator_TableClassName="LeaveApplicationsDataTable" msprop:Generator_TableVarName="tableLeaveApplications" msprop:Generator_TablePropName="LeaveApplications" msprop:Generator_RowDeletingName="LeaveApplicationsRowDeleting" msprop:Generator_RowChangingName="LeaveApplicationsRowChanging" msprop:Generator_RowEvHandlerName="LeaveApplicationsRowChangeEventHandler" msprop:Generator_RowDeletedName="LeaveApplicationsRowDeleted" msprop:Generator_UserTableName="LeaveApplications" msprop:Generator_RowChangedName="LeaveApplicationsRowChanged" msprop:Generator_RowEvArgName="LeaveApplicationsRowChangeEvent" msprop:Generator_RowClassName="LeaveApplicationsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="leave_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnleave_id" msprop:Generator_ColumnPropNameInRow="leave_id" msprop:Generator_ColumnPropNameInTable="leave_idColumn" msprop:Generator_UserColumnName="leave_id" type="xs:int" />
+              <xs:element name="Employee_ID" msprop:Generator_ColumnVarNameInTable="columnEmployee_ID" msprop:Generator_ColumnPropNameInRow="Employee_ID" msprop:Generator_ColumnPropNameInTable="Employee_IDColumn" msprop:Generator_UserColumnName="Employee_ID" type="xs:int" minOccurs="0" />
+              <xs:element name="leave_type" msprop:Generator_ColumnVarNameInTable="columnleave_type" msprop:Generator_ColumnPropNameInRow="leave_type" msprop:Generator_ColumnPropNameInTable="leave_typeColumn" msprop:Generator_UserColumnName="leave_type">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="start_date" msprop:Generator_ColumnVarNameInTable="columnstart_date" msprop:Generator_ColumnPropNameInRow="start_date" msprop:Generator_ColumnPropNameInTable="start_dateColumn" msprop:Generator_UserColumnName="start_date" type="xs:dateTime" />
+              <xs:element name="reason" msprop:Generator_ColumnVarNameInTable="columnreason" msprop:Generator_ColumnPropNameInRow="reason" msprop:Generator_ColumnPropNameInTable="reasonColumn" msprop:Generator_UserColumnName="reason" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="status" msprop:Generator_ColumnVarNameInTable="columnstatus" msprop:Generator_ColumnPropNameInRow="status" msprop:Generator_ColumnPropNameInTable="statusColumn" msprop:Generator_UserColumnName="status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="application_date" msprop:Generator_ColumnVarNameInTable="columnapplication_date" msprop:Generator_ColumnPropNameInRow="application_date" msprop:Generator_ColumnPropNameInTable="application_dateColumn" msprop:Generator_UserColumnName="application_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="short_leave_start_time" msprop:Generator_ColumnVarNameInTable="columnshort_leave_start_time" msprop:Generator_ColumnPropNameInRow="short_leave_start_time" msprop:Generator_ColumnPropNameInTable="short_leave_start_timeColumn" msprop:Generator_UserColumnName="short_leave_start_time" type="xs:duration" minOccurs="0" />
+              <xs:element name="short_leave_end_time" msprop:Generator_ColumnVarNameInTable="columnshort_leave_end_time" msprop:Generator_ColumnPropNameInRow="short_leave_end_time" msprop:Generator_ColumnPropNameInTable="short_leave_end_timeColumn" msprop:Generator_UserColumnName="short_leave_end_time" type="xs:duration" minOccurs="0" />
+              <xs:element name="end_date" msprop:Generator_ColumnVarNameInTable="columnend_date" msprop:Generator_ColumnPropNameInRow="end_date" msprop:Generator_ColumnPropNameInTable="end_dateColumn" msprop:Generator_UserColumnName="end_date" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LeaveApplications" />
+      <xs:field xpath="mstns:leave_id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
